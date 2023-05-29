@@ -12,20 +12,20 @@ private:
     int price;
     int ID;
 public:
-    Product(string new_name, int new_price)
+    Product(string name, int price, int ID)
     {
-        name = new_name;
-        price = new_price;
+        this -> name = name;
+        this -> price = price;
+        this -> ID = ID;
     }
 
-    int Coast()
+    int Single_Cost()
     {
         return price;
     }
 
-
-
 };
+
 
 class Customer
 {
@@ -34,11 +34,18 @@ private:
     string email;
     int ID;
 public:
-    Customer(string new_name, string new_email, int new_ID)
+    Customer(string name, string email, int ID)
     {
-        name = new_name;
-        email = new_email;
-        ID = new_ID;
+        this -> name = name;
+        this -> email = email;
+        this -> ID = ID;
+    }
+
+    Customer() {};
+
+    void PrintName()
+    {
+        cout << name << "\n";
     }
 
 
@@ -47,24 +54,50 @@ public:
 class Order
 {
 private:
-    int ID;
     int total;
+    int ID;
+    Customer customer;
     vector<Product>products;
 public:
-    void AddProduct(Product name)
+    Order( int ID, Customer customer)
     {
-        products.push_back(name);
-        total = name.price();
+        this -> customer = customer;
+        this -> ID = ID;
     }
+
+    void AddProduct(Product product)
+    {
+        products.push_back(product);
+
+    }
+
     int WholePrice()
     {
-        return total;
+        total = 0;
+
+        for (Product n : products)
+        {
+            total = total + n.Single_Cost();
+        }
+
+        customer.PrintName();
+        cout << "The whole price is: " << total << "$" << "\n";
     }
 
 };
 
 int main()
 {
+    Customer PawelJarzebski("pawel.jarzebski@wp.pl", "Pawel Jarzebski", 451);
+    Product milk("Milk", 3, 243 );
+    Product butter("Butter", 6, 789);
+    Product paper("Paper", 12, 563);
+    Order order1(1, PawelJarzebski);
+    order1.AddProduct(milk);
+    order1.AddProduct(butter);
+    order1.AddProduct(paper);
+    order1.WholePrice();
+
 
 
     return 0;
