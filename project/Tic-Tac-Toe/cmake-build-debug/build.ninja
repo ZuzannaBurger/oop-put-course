@@ -67,8 +67,8 @@ build CMakeFiles/Tic_Tac_Toe.dir/src/TicTacToe/Game.cpp.obj: CXX_COMPILER__Tic_T
   OBJECT_DIR = CMakeFiles\Tic_Tac_Toe.dir
   OBJECT_FILE_DIR = CMakeFiles\Tic_Tac_Toe.dir\src\TicTacToe
 
-build CMakeFiles/Tic_Tac_Toe.dir/src/TicTacToe/Interface.cpp.obj: CXX_COMPILER__Tic_Tac_Toe_Debug C$:/Users/zuzan/CLionProjects/Tic-Tac-Toe/src/TicTacToe/Interface.cpp || cmake_object_order_depends_target_Tic_Tac_Toe
-  DEP_FILE = CMakeFiles\Tic_Tac_Toe.dir\src\TicTacToe\Interface.cpp.obj.d
+build CMakeFiles/Tic_Tac_Toe.dir/src/TicTacToe/FakeClass.cpp.obj: CXX_COMPILER__Tic_Tac_Toe_Debug C$:/Users/zuzan/CLionProjects/Tic-Tac-Toe/src/TicTacToe/FakeClass.cpp || cmake_object_order_depends_target_Tic_Tac_Toe
+  DEP_FILE = CMakeFiles\Tic_Tac_Toe.dir\src\TicTacToe\FakeClass.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++23
   OBJECT_DIR = CMakeFiles\Tic_Tac_Toe.dir
   OBJECT_FILE_DIR = CMakeFiles\Tic_Tac_Toe.dir\src\TicTacToe
@@ -81,7 +81,7 @@ build CMakeFiles/Tic_Tac_Toe.dir/src/TicTacToe/Interface.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable Tic_Tac_Toe.exe
 
-build Tic_Tac_Toe.exe: CXX_EXECUTABLE_LINKER__Tic_Tac_Toe_Debug CMakeFiles/Tic_Tac_Toe.dir/main.cpp.obj CMakeFiles/Tic_Tac_Toe.dir/src/TicTacToe/Board.cpp.obj CMakeFiles/Tic_Tac_Toe.dir/src/TicTacToe/Game.cpp.obj CMakeFiles/Tic_Tac_Toe.dir/src/TicTacToe/Interface.cpp.obj
+build Tic_Tac_Toe.exe: CXX_EXECUTABLE_LINKER__Tic_Tac_Toe_Debug CMakeFiles/Tic_Tac_Toe.dir/main.cpp.obj CMakeFiles/Tic_Tac_Toe.dir/src/TicTacToe/Board.cpp.obj CMakeFiles/Tic_Tac_Toe.dir/src/TicTacToe/Game.cpp.obj CMakeFiles/Tic_Tac_Toe.dir/src/TicTacToe/FakeClass.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Tic_Tac_Toe.dir
